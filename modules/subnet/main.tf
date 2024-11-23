@@ -1,6 +1,7 @@
 resource "aws_subnet" "public" {
-  vpc_id     = var.vpc_id
-  cidr_block = var.public_cidr_block
+  vpc_id            = var.vpc_id
+  cidr_block        = var.public_cidr_block
+  map_public_ip_on_launch = true
 
   tags = {
     Name = format("%s-public", var.subnet_name)
