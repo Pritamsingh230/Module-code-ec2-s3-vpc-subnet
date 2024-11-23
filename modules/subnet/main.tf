@@ -3,7 +3,7 @@ resource "aws_subnet" "public" {
   cidr_block = "10.0.1.0/24"
 
   tags = {
-    Name = format("%s-public", var.subnet_name_prefix)
+    Name = format("%s-public", var.subnet_name1)
   }
 }
 
@@ -12,6 +12,6 @@ resource "aws_subnet" "private" {
   cidr_block = "10.0.2.0/24"
 
   tags = {
-    Name = format("%s-private", var.subnet_name_prefix)
+    Name = format("%s-private", var.subnet_name1)
   }
 }
