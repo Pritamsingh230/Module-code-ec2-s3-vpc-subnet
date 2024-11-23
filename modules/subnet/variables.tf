@@ -6,5 +6,4 @@ variable "vpc_id" {
 variable "subnet_name_prefix" {
   description = "Prefix for subnet names"
   type        = string
-  default     = "my-subnet"
 }
