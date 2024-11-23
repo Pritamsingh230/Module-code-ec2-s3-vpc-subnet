@@ -11,11 +11,9 @@ variable "subnet_name" {
 variable "public_cidr_block" {
   description = "CIDR block for the public subnet"
   type        = string
-  default     = "10.0.1.0/24" # Default public subnet CIDR
 }
 
 variable "private_cidr_block" {
   description = "CIDR block for the private subnet"
   type        = string
-  default     = "10.0.2.0/24" # Default private subnet CIDR
 }
